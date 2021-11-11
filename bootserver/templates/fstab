@@ -1,0 +1,8 @@
+#/srv/nfs/<serial>/etc/fstab
+proc            /proc           proc    defaults        0       0
+${NFS_SERVER_ADDR}:/srv/nfs/${NODE_SERIAL} /       nfs4     defaults,rw,nolock             0       0 # data to be shared to server
+#${NFS_SERVER_ADDR}:/srv/nfs/${NODE_SERIAL}/boot/firmware /boot/firmware       nfs4     defaults,rw,nolock             0       1 # data to be shared to server
+none            /tmp            tmpfs   defaults        0       0
+none            /var/run        tmpfs   defaults        0       0
+none            /var/lock       tmpfs   defaults        0       0
+none            /var/tmp        tmpfs   defaults        0       0
