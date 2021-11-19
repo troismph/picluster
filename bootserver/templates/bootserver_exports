@@ -1,1 +1,1 @@
-/srv/nfs/${NODE_SERIAL} *(rw,sync,no_subtree_check,no_root_squash,fsid=1)
+${NFS_ROOT}/${NODE_SERIAL} *(rw,sync,no_subtree_check,no_root_squash,fsid=${NFS_ID})

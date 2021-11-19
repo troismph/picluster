@@ -1,2 +1,2 @@
-#/srv/nfs/<serial>/boot/cmdline.txt
-net.ifnames=0 dwc_otg.lpm_enable=0 console=serial0,115200 console=tty1 nfsrootdebug elevator=deadline rootwait fixrtc init=initrd.img ip=dhcp rootfstype=nfs4 root=/dev/nfs nfsroot=${NFS_SERVER_ADDR}:/srv/nfs/${NODE_SERIAL} rw
+#${NFS_ROOT}/<serial>/boot/cmdline.txt
+net.ifnames=0 dwc_otg.lpm_enable=0 console=serial0,115200 console=tty1 nfsrootdebug elevator=deadline rootwait fixrtc init=initrd.img ip=dhcp rootfstype=nfs4 root=/dev/nfs nfsroot=${NFS_SERVER_ADDR}:${NFS_ROOT}/${NODE_SERIAL} rw

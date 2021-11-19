@@ -1,2 +1,2 @@
-overlay /srv/tftp/${NODE_SERIAL} overlay defaults,lowerdir=/srv/tftp/ubuntu-rpi4-boot-lower,upperdir=/srv/tftp/${NODE_SERIAL}-upper,workdir=/srv/tftp/${NODE_SERIAL}-work,index=on 0 0
-overlay /srv/nfs/${NODE_SERIAL} overlay defaults,lowerdir=/srv/nfs/ubuntu-rpi4-root-lower,upperdir=/srv/nfs/${NODE_SERIAL}-upper,workdir=/srv/nfs/${NODE_SERIAL}-work,nfs_export=on,index=on 0 0
+overlay ${TFTP_ROOT}/${NODE_SERIAL} overlay defaults,lowerdir=${TFTP_ROOT}/ubuntu-rpi4-boot-lower,upperdir=${TFTP_ROOT}/${NODE_SERIAL}-upper,workdir=${TFTP_ROOT}/${NODE_SERIAL}-work,index=on 0 0
+overlay ${NFS_ROOT}/${NODE_SERIAL} overlay defaults,lowerdir=${NFS_ROOT}/ubuntu-rpi4-root-lower,upperdir=${NFS_ROOT}/${NODE_SERIAL}-upper,workdir=${NFS_ROOT}/${NODE_SERIAL}-work,nfs_export=on,index=on 0 0
