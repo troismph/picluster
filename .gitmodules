@@ -1,0 +1,3 @@
+[submodule "ks-installer"]
+	path = ks-installer
+	url = git@github.com:troismph/ks-installer.git
